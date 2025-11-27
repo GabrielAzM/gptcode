@@ -59,10 +59,10 @@ body {
 .navbar {
   font-family: "Poppins", sans-serif; /* Fonte padrão do site */
   transition: all 0.3s ease-in-out;
-  padding: 0.8rem 0;
+  padding: 0.4rem 0;
   background-color: rgba(11, 25, 62, 0.95);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 1050;
 }
@@ -364,15 +364,7 @@ body {
 }
 
 /* Research Section */
-.research-section {
-  background: linear-gradient(
-    135deg,
-    var(--dark-blue) 0%,
-    var(--medium-blue) 100%
-  );
-  position: relative;
-  overflow: hidden;
-}
+.research-
 
 .research-section::before {
   content: "";
@@ -389,8 +381,8 @@ body {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
   color: var(--light-text);
   height: 100%;
   transition: all 0.3s;
@@ -430,7 +422,7 @@ body {
 
 /* Publication Cards */
 .publication-card {
-  background: #ffffff; /* make cards white to contrast on light background */
+   /* make cards white to contrast on light background */
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
@@ -493,7 +485,7 @@ body {
 
 /* Contact Form */
 .contact-form-container {
-  background: #ffffff;
+  
   border-radius: 14px;
   padding: 2rem;
   border: 1px solid rgba(34, 41, 47, 0.06);
@@ -530,7 +522,7 @@ body {
 
 /* Contact Page Specific */
 .contact-info-card {
-  background: #ffffff;
+  
   border-radius: 12px;
   padding: 2rem;
   border: 1px solid rgba(34, 41, 47, 0.06);
@@ -580,15 +572,7 @@ body {
   color: var(--yellow);
 }
 
-.info-section {
-  background: linear-gradient(
-    135deg,
-    rgba(165, 201, 224, 0.05),
-    rgba(66, 122, 161, 0.03)
-  );
-  border-radius: 12px;
-  padding: 3rem 2rem;
-}
+.info-
 
 .info-item {
   padding: 1rem;
@@ -600,26 +584,18 @@ body {
 }
 
 /* Partners */
-.partner-logo {
-  filter: grayscale(100%);
-  opacity: 0.75;
-  transition: all 0.3s;
-}
+.partner-logo { filter: none !important; opacity: 1 !important; }
 
 .partner-logo:hover {
-  filter: grayscale(0);
+  filter: none !important;
   opacity: 1;
 }
 @media (max-width: 768px) {
   /* Estilos para telas menores que 768px (celulares, por exemplo) */
-  .partner-logo {
-    filter: grayscale(20%);
-    opacity: 0.75;
-    transition: all 0.3s;
-  }
+  .partner-logo { filter: none !important; opacity: 1 !important; }
 
   .partner-logo:hover {
-    filter: grayscale(0);
+    filter: none !important;
     opacity: 1;
   }
 }
@@ -629,77 +605,13 @@ body {
   background-color: var(--dark-blue);
 }
 
-footer {
-  position: relative;
-}
+.
 
-footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-  opacity: 0.05;
-}
+.
 
-.footer-brand {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.footer-brand span:first-child {
-  color: var(--light-text);
-}
-
-.footer-brand span:last-child {
-  color: var(--accent-gold);
-}
-
-footer h5 {
-  color: var(--accent-gold);
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-}
-
-footer a {
-  color: var(--light-text);
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
-footer a:hover {
-  color: var(--accent-gold);
-}
-
-footer p,
-footer a,
-footer h5,
-footer span,
-footer div {
-  user-select: text !important;
-  -webkit-user-select: text !important;
-  -moz-user-select: text !important;
-  -ms-user-select: text !important;
-}
-
-footer * {
-  user-select: text !important;
-  -webkit-user-select: text !important;
-  -moz-user-select: text !important;
-  -ms-user-select: text !important;
-}
+.
 
 /* Exceção para botões e links clicáveis */
-footer .btn,
-footer .social-link {
-  user-select: none !important;
-  -webkit-user-select: none !important;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
-}
 
 .social-links {
   display: flex;
@@ -771,19 +683,6 @@ footer .social-link {
 }
 
 /* Page Header */
-.page-header {
-  height: 50vh;
-  min-height: 360px;
-  background: linear-gradient(
-    135deg,
-    var(--dark-blue) 0%,
-    var(--medium-blue) 100%
-  );
-  position: relative;
-  overflow: hidden;
-  margin-top: 0; /* keep header full-bleed behind navbar */
-  width: 100%;
-}
 
 .page-header::before {
   content: "";
@@ -797,10 +696,6 @@ footer .social-link {
 }
 
 /* Remova ou ajuste margens/padding do header */
-.page-header {
-  margin-bottom: 0 !important;
-  border-bottom: none !important;
-}
 
 /* Make header background cover full viewport width for pages like contato */
 .page-header.full-bleed {
@@ -813,14 +708,6 @@ footer .social-link {
 }
 
 /* Ajuste para faixa de contato */
-.page-header {
-  width: 100%;
-  margin: 0;
-  padding: 2rem 0;
-  background-color: var(--dark-blue);
-  color: white;
-  text-align: center;
-}
 
 .full-width-section {
   position: relative;
@@ -894,9 +781,7 @@ footer .social-link {
     height: auto;
   }
 
-  .footer-brand {
-    font-size: 1.5rem;
-  }
+  .
 
   .social-links {
     justify-content: center;
@@ -905,9 +790,7 @@ footer .social-link {
 
 /* Ajustes para telas muito pequenas */
 @media (max-width: 576px) {
-  .page-header {
-    padding: 3rem 1rem;
-  }
+  
 
   .page-header h1 {
     font-size: 1.75rem;
@@ -944,7 +827,7 @@ ul {
 /* Page background from templates/main.css */
 body {
   /* keep existing font-family and color from above; only set background color from templates */
-  background-color: #f8f9fa;
+  
 }
 
 /* Utility container used across templates */
@@ -1009,68 +892,8 @@ body {
 }
 
 /* Footer refinements to match the design in the provided image */
-footer#contato .container {
-  max-width: 1200px;
-}
 
-footer#contato .footer-brand {
-  font-size: 1.9rem;
-  font-weight: 700;
-  color: var(--light-text);
-  margin-bottom: 1rem;
-}
-
-footer#contato h5 {
-  color: var(--accent-gold);
-  font-weight: 700;
-}
-
-footer#contato p,
-footer#contato a {
-  color: rgba(255, 255, 255, 0.85);
-}
-
-footer#contato .social-links {
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-
-footer#contato .social-link {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  transition: all 0.25s ease;
-}
-
-footer#contato .social-link i {
-  color: var(--light-text) !important;
-  font-size: 1.2rem;
-}
-
-footer#contato .social-link:hover {
-  background: rgba(238, 184, 49, 0.12);
-  border-color: rgba(238, 184, 49, 0.2);
-  transform: translateY(-3px);
-}
-
-footer#contato hr {
-  border-color: rgba(255, 255, 255, 0.06);
-}
-
-footer#contato .text-center p.small {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-/* Make the footer visually taller on large screens */
-@media (min-width: 992px) {
-  footer#contato {
-    padding: 80px 0;
-  }
+/* Make the 
 }
 
 /* Simple fade-in animation used by some pages */
@@ -1137,9 +960,214 @@ footer#contato .text-center p.small {
 }
 
 /* Footer adjustments for icon alignment */
-footer#contato .social-links {
-  display: flex;
-  justify-content: center; /* Center the icons */
-  gap: 1rem;
-  margin-top: 1rem;
+
+/* Page Header - reduzido e centralizado */
+.page-header {
+  background: linear-gradient(135deg, var(--dark-blue) 0%, var(--medium-blue) 100%);
+  padding: 40px 0;
+  text-align: center;
 }
+.page-header h1 {
+  font-size: 2.2rem;
+}
+.page-header p {
+  font-size: 1rem;
+}
+
+/* --- Overrides: navbar hover & footer standardization --- */
+/* Ensure navbar is white by default and on hover (high specificity) */
+.navbar {
+  background-color: #ffffff !important;
+  color: #111 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: 1px solid rgba(0,0,0,0.06) !important;
+}
+
+.navbar:hover {
+  background-color: #ffffff !important;
+}
+
+/* Nav links: dark text on white background, subtle hover color */
+.navbar .nav-link {
+  color: #111 !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #0b193e !important;
+  background: transparent !important;
+}
+
+/* Make sure the toggler icon is visible on white background */
+.navbar-toggler .navbar-toggler-icon {
+  filter: none !important;
+}
+
+/* Footer: full-width dark gradient, consistent spacing and centered content */
+footer {
+  background: linear-gradient(135deg, #0b193e 0%, #274a66 100%) !important;
+  color: #ffffff !important;
+  padding: 48px 0 28px !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+footer .container {
+  max-width: 1200px;
+}
+
+footer h3, footer h5 {
+  color: #ffffff !important;
+}
+
+footer a {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+/* Small screens: stack footer columns */
+@media (max-width: 767px) {
+  footer .row { text-align: center; }
+  footer .col-lg-4 { margin-bottom: 20px; }
+}
+
+/* Ensure header sections are not overlapped by navbar */
+body { padding-top: 70px; }
+
+/* Remove any residual light backgrounds from partners section */
+.section-title.bg-light, .partners-section { background: transparent !important; }
+
+/* Force partner images to show full color */
+.section-padding img,
+.partners-section img,
+.partner-logo,
+.partners img {
+  filter: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+  transition: transform 0.25s ease !important;
+}
+
+/* If there is an overlay element above partner images, make it transparent */
+.partners-section .overlay,
+.section-padding .overlay {
+  background: transparent !important;
+  pointer-events: none !important;
+}
+
+/* Strong navbar overrides to prevent gray/transparent states */
+.navbar, .navbar.fixed-top, .navbar.navbar-expand-lg, .navbar-scrolled, .navbar.scrolled, .navbar.shadow-sm {
+  background-color: #ffffff !important;
+  color: #111 !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid rgba(0,0,0,0.06) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Ensure collapsed navbar background also white */
+.navbar .collapse, .navbar-collapse {
+  background-color: transparent !important;
+}
+
+/* If JS toggles a transparent class, force white */
+.navbar.transparent, .navbar.is-transparent {
+  background-color: #ffffff !important;
+}
+
+/* ================== FINAL ENFORCEMENTS (Do not remove) ================== */
+/* Force navbar appearance (white background, links dark, no gray hover) */
+#navbar, .navbar, .navbar.fixed-top, .navbar.navbar-expand-lg {
+  background-color: #ffffff !important;
+  color: #111 !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid rgba(0,0,0,0.06) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+#navbar:hover, .navbar:hover, .navbar.transparent:hover, .navbar.is-transparent:hover {
+  background-color: #ffffff !important;
+}
+#navbar:hover { background-color: #ffffff !important; }
+.navbar .nav-link, #navbar .nav-link, .navbar-nav .nav-link {
+  color: #111 !important;
+  background: transparent !important;
+}
+.navbar .nav-link:hover, #navbar .nav-link:hover, .navbar .nav-link:focus {
+  color: #0b193e !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+/* Ensure toggler icon visible on white background */
+.navbar-toggler .navbar-toggler-icon, .navbar-toggler-icon {
+  filter: none !important;
+}
+
+/* Force page header visible on devs page (some rules previously hid it) */
+.page-header.devs-page {
+  display: block !important;
+  visibility: visible !important;
+  height: auto !important;
+  opacity: 1 !important;
+}
+
+/* Force partner logos fully colored and remove overlays */
+.partners-section, .partners, .partner-logo, .partners img, .partners-section img, .partner-logos img {
+  filter: none !important;
+  opacity: 1 !important;
+  background: transparent !important;
+}
+.partners-section .overlay, .section-padding .overlay {
+  background: transparent !important;
+  pointer-events: none !important;
+  display: none !important;
+}
+
+/* Strong footer enforcement: full-width background but centered content */
+footer, .site-footer, .footer {
+  background: linear-gradient(135deg, #0b193e 0%, #274a66 100%) !important;
+  color: #ffffff !important;
+  padding: 48px 0 28px !important;
+  width: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  position: relative !important;
+  box-shadow: none !important;
+}
+footer .container, .footer .container, .site-footer .container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+footer h3, footer h5, .footer h3, .footer h5 { color: #ffffff !important; }
+footer a, .footer a { color: rgba(255,255,255,0.9) !important; }
+
+/* Responsive footer stacking */
+@media (max-width: 767px) {
+  footer .row { text-align: center !important; }
+  footer .col-lg-4 { margin-bottom: 20px !important; }
+}
+
+/* Ensure headers aren't overlapped by a fixed navbar on all pages */
+body { padding-top: 70px !important; }
+
+/* Remove full-bleed hacks that cause inconsistent centering per page */
+.hero, .full-width-section, .page-header.full-bleed {
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  position: relative !important;
+}
+
+/* Small safeguard for publication/team/devs pages to match container width */
+.main-content, .page-main, main, .content, .site-content {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+/* END FINAL ENFORCEMENTS */
