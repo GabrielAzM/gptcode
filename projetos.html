@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-
+<link rel="icon" type="image/png" href="static/imagens/logos/gptcode-icon.png" sizes="32x32">
 <link rel=\"icon\" type=\"image/png\" href=\"static/imagens/logos/gptcode-icon.png\" sizes=\"32x32\">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,93 +29,11 @@
       rel="stylesheet"
       href="static/css/main.css"
     />
-    
-<!-- FORCED OVERRIDES: navbar/footer/header (inserted by script) -->
-<style>
-/* Force navbar + links */
-nav#navbar, .navbar, .navbar.fixed-top, .navbar.navbar-expand-lg {
-  background-color: #ffffff !important;
-  color: #111 !important;
-  box-shadow: none !important;
-  border-bottom: 1px solid rgba(0,0,0,0.06) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-}
-.navbar .nav-link { color: #111 !important; }
-.navbar .nav-link:hover, .navbar .nav-link:focus { color: #0b193e !important; background: transparent !important; }
-
-/* Force header appearance */
-.page-header { width:100% !important; padding:100px 0 !important; text-align:center !important; background: linear-gradient(135deg, #0b193e 0%, #427aa1 100%) !important; color: #fff !important; }
-.page-header h1, .page-header .display-4 { color: #fff !important; }
-
-/* PAGE HEADER - Full width without container constraints */
-.page-header {
-  background: linear-gradient(135deg, #0b193e 0%, #427aa1 100%) !important;
-  color: white !important;
-  padding: 100px 0 !important;
-  text-align: center !important;
-  width: 100vw !important;
-  position: relative !important;
-  left: calc(-50vw + 50%) !important;
-  margin: 0 !important;
-}
-
-.page-header .container {
-  max-width: 100% !important;
-  width: 100vw !important;
-  padding: 0 20px !important;
-  margin: 0 auto !important;
-}
-
-.page-header h1, .page-header .display-4 {
-  color: #ffffff !important;
-  font-size: 2.2rem !important;
-  margin: 0 !important;
-}
-
-.page-header p {
-  color: rgba(255, 255, 255, 0.8) !important;
-  margin: 0.5rem 0 !important;
-}
-
-/* FOOTER - Full width background with centered content */
-footer, footer#contato, .site-footer { 
-  background: linear-gradient(135deg, #0b193e 0%, #274a66 100%) !important; 
-  color: #fff !important; 
-  width: 100vw !important;
-  position: relative !important;
-  left: calc(-50vw + 50%) !important;
-  margin: 0 !important;
-  padding: 48px 0 28px !important;
-  box-shadow: none !important;
-}
-footer .container, footer#contato .container { 
-  max-width: 1200px !important; 
-  margin: 0 auto !important; 
-  padding: 0 15px !important;
-  width: 100% !important;
-}
-footer h3, footer h5, footer .footer-brand { 
-  color: #ffffff !important; 
-}
-footer a, footer p { 
-  color: rgba(255,255,255,0.95) !important; 
-}
-footer i { 
-  color: rgba(255,255,255,0.95) !important; 
-}
-
-/* Partner logos */
-.section-padding img, .partners-section img, .partner-logo { filter: none !important; -webkit-filter: none !important; opacity:1 !important; }
-</style>
-
-    <link rel="icon" type="image/png" href="static/imagens/logos/gptcode-icon.png" sizes="32x32">
-    <link href="static/css/enhancements.css" rel="stylesheet">
     </head>
   <body>
 <nav
       id="navbar"
-      class="navbar navbar-expand-lg fixed-top shadow-sm"
+      class="navbar navbar-expand-lg shadow-sm"
     >
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -185,10 +103,10 @@ footer i {
       </div>
     </nav>
     <!-- Header -->
-    <header class="page-header">
-      <div class="container text-center">
-        <h1 class="display-4" style="font-size: 2.2rem; font-weight: bold; color: white; margin: 0">Projetos</h1>
-        <p class="lead text-white-50" style="font-size: 1rem; margin: 0.5rem 0">
+    <header class="page-header" style="width: 100%; padding: 100px 0; text-align: center; background: linear-gradient(135deg, #0b193e 0%, #427aa1 100%);; ">
+      <div class="container text-center" style="text-align: center;">
+        <h1 class="display-4" style="font-size: 2.2rem; font-weight: bold; color: white; margin: 0;">Projetos</h1>
+        <p class="lead text-white-50" style="font-size: 1rem; margin: 0.5rem 0;">
           Conheça os projetos em andamento e concluídos do GPTCode
         </p>
       </div>
@@ -291,8 +209,6 @@ footer i {
             </ul>
           </div>
         </section>
-
-        
     </main>
 
     <script src=""></script>
@@ -302,7 +218,7 @@ footer i {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="static/js/main.js"></script>
 <footer id="contato" class="py-5 bg-dark-blue text-white">
-
+<style>.footer-social { text-align: center; display: flex; justify-content: center; gap: 20px; }</style>
       <div class="container">
         <div class="row">
           <div class="col-lg-4 mb-4">
@@ -322,7 +238,7 @@ footer i {
             </p>
           </div>
           <div class="col-lg-4 mb-4">
-            <h5>Conecte-se</h5><div style="text-align: center; margin-top: 15px"><div class="social-links" style="display: flex; justify-content: center; gap: 15px"><div class="social-links" style="display: flex; justify-content: center; gap: 15px; align-items: center">
+            <h5 style="text-align: center;">Conecte-se</h5><div style="text-align: center; margin-top: 15px;"><div class="social-links" style="display: flex; justify-content: center; gap: 15px;"><div class="social-links" style="display: flex; justify-content: center; gap: 15px; align-items: center;">
               <a
                 href="https://github.com/GPTCodeIFB"
                 class="social-link"
@@ -351,7 +267,6 @@ footer i {
         </div>
       </div>
     </footer>
-<script src="static/js/transitions.js"></script>
-  </body>
+</body>
 </html>
 
