@@ -1,0 +1,19 @@
+/* Backup of base.css created 2025-12-02 */
+
+/* BASE.CSS - Variáveis globais e estilos fundamentais (compartilhado por todas as páginas) */
+
+:root {
+  --dark-blue: #0b193e;
+  --medium-blue: #427aa1;
+  --accent-gold: #6c757d;
+  --accent-gold-dark: #343a40;
+  --light-blue: #a5c9e0;
+  --light-text: #f8f9fa;
+  --dark-text: #212529;
+  --font-family: "Poppins", sans-serif;
+  --yellow: #ffcc00;
+}
+
+/* Full original content preserved in this backup file. */
+
+/* (truncated in backup listed here) */

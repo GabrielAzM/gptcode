@@ -1,4 +1,52 @@
+/* === PAGE-SPECIFIC BUNDLE (copied from base.css) === */
+:root {
+  --dark-blue: #0b193e;
+  --medium-blue: #427aa1;
+  --accent-gold: #6c757d;
+  --accent-gold-dark: #343a40;
+  --light-blue: #a5c9e0;
+  --light-text: #f8f9fa;
+  --dark-text: #212529;
+  --font-family: "Poppins", sans-serif;
+  --yellow: #ffcc00;
+}
+* { box-sizing: border-box; }
+body { font-family: var(--font-family); color: var(--dark-text); line-height: 1.6; overflow-x: hidden; padding-top: 64px; }
+
+/* navbar */
+nav#navbar, .navbar { background-color: #fff; color: #111; border-bottom: 1px solid rgba(0,0,0,0.06); padding: 0.5rem 1rem; min-height: 64px; }
+.navbar .nav-link { color: #111; font-size: 1rem; padding: 0.5rem 0.8rem; font-weight: 500; }
+.navbar-brand img { height: 52px; max-height: 64px; }
+
+/* page header / blue banner */
+.page-header, .blue-banner { background: linear-gradient(135deg,#0b193e 0%,#427aa1 100%); color: #fff; text-align: center; padding: 120px 20px; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; width: 100vw; box-shadow: none; overflow: visible; }
+.page-header .container, .blue-banner .container { max-width: 1200px; width: 100%; padding: 0 20px; margin: 0 auto; }
+.page-header h1, .page-header .display-4, .blue-banner h1, .blue-banner .display-4 { color: #fff; font-weight: 700; margin: 0; font-size: 3.2rem; line-height: 1.1; }
+.page-header p.lead, .blue-banner p.lead { color: rgba(255,255,255,0.88); margin-top: 8px; font-size: 1.05rem; }
+
+/* footer */
+footer, footer#contato, .site-footer { background: linear-gradient(135deg,#0b193e 0%,#274a66 100%); color: #fff; width: 100vw; position: relative; left: calc(-50vw + 50%); margin: 0; padding: 48px 0 28px; }
+footer .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; width: 100%; }
+.footer-social { display: flex; justify-content: center; gap: 15px; align-items: center; margin-top: 15px; }
+
+/* utilities */
+.btn-sm { font-size: 0.85rem; }
+.section-padding { padding: 5rem 0; }
+.section-title { font-weight: 700; position: relative; padding-bottom: 1rem; margin-bottom: 2rem; }
+
+@media (max-width: 768px) {
+  .page-header, .blue-banner { padding: 80px 16px; }
+  .page-header h1, .blue-banner h1 { font-size: 1.9rem; }
+  nav#navbar { padding: 0.4rem 1rem; min-height: 56px; }
+  .navbar-brand img { height: 48px; }
+}
+
+/* End page-specific bundle */
+
 /* Filtros removidos - não são mais necessários */
+/* Recovered/common styles consolidated in `static/css/base.css` on 2025-12-02.
+  base.css contains merged content from main.css + overrides.css (backups in static/css/backups/).
+  Page-specific overrides remain below. */
 
 /* Categorias */
 .team-category {

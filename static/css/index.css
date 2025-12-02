@@ -1,0 +1,171 @@
+/* === PAGE-SPECIFIC BUNDLE (copied from base.css) === */
+:root {
+    --dark-blue: #0b193e;
+    --medium-blue: #427aa1;
+    --accent-gold: #6c757d;
+    --accent-gold-dark: #343a40;
+    --light-blue: #a5c9e0;
+    --light-text: #f8f9fa;
+    --dark-text: #212529;
+    --font-family: "Poppins", sans-serif;
+    --yellow: #ffcc00;
+}
+* { box-sizing: border-box; }
+body { font-family: var(--font-family); color: var(--dark-text); line-height: 1.6; overflow-x: hidden; padding-top: 64px; }
+
+/* navbar */
+nav#navbar, .navbar { background-color: #fff; color: #111; border-bottom: 1px solid rgba(0,0,0,0.06); padding: 0.5rem 1rem; min-height: 64px; }
+.navbar .nav-link { color: #111; font-size: 1rem; padding: 0.5rem 0.8rem; font-weight: 500; }
+.navbar-brand img { height: 52px; max-height: 64px; }
+
+/* page header / blue banner */
+.page-header, .blue-banner { background: linear-gradient(135deg,#0b193e 0%,#427aa1 100%); color: #fff; text-align: center; padding: 120px 20px; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; width: 100vw; box-shadow: none; overflow: visible; }
+.page-header .container, .blue-banner .container { max-width: 1200px; width: 100%; padding: 0 20px; margin: 0 auto; }
+.page-header h1, .page-header .display-4, .blue-banner h1, .blue-banner .display-4 { color: #fff; font-weight: 700; margin: 0; font-size: 3.2rem; line-height: 1.1; }
+.page-header p.lead, .blue-banner p.lead { color: rgba(255,255,255,0.88); margin-top: 8px; font-size: 1.05rem; }
+
+/* footer */
+footer, footer#contato, .site-footer { background: linear-gradient(135deg,#0b193e 0%,#274a66 100%); color: #fff; width: 100vw; position: relative; left: calc(-50vw + 50%); margin: 0; padding: 48px 0 28px; }
+footer .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; width: 100%; }
+.footer-social { display: flex; justify-content: center; gap: 15px; align-items: center; margin-top: 15px; }
+
+/* utilities */
+.btn-sm { font-size: 0.85rem; }
+.section-padding { padding: 5rem 0; }
+.section-title { font-weight: 700; position: relative; padding-bottom: 1rem; margin-bottom: 2rem; }
+
+@media (max-width: 768px) {
+    .page-header, .blue-banner { padding: 80px 16px; }
+    .page-header h1, .blue-banner h1 { font-size: 1.9rem; }
+    nav#navbar { padding: 0.4rem 1rem; min-height: 56px; }
+    .navbar-brand img { height: 48px; }
+}
+
+/* End page-specific bundle */
+
+/* Styles specific to index.html (migrated from custom.css) */
+/* Recovered/common styles consolidated in `static/css/base.css` on 2025-12-02.
+        base.css contains merged content from main.css + overrides.css (backups in static/css/backups/).
+        Page-specific overrides remain below. */
+.navbar-brand img {
+    height: 52px !important;
+    transition: transform 0.4s ease;
+    max-height: 64px !important;
+}
+
+.quem-somos-img {
+    max-width: 280px;
+    width: 100%;
+}
+
+.destaques-container {
+    display: flex;
+}
+
+.destaques-img {
+    max-width: 90%;
+    max-height: 250px; /* reduz altura do destaque */
+    object-fit: contain;
+}
+
+/* reduzir padding do card de Destaques para diminuir altura geral */
+section.bg-light .row.shadow.rounded-4.bg-white { padding: 1rem !important; }
+
+/* Forçar estilo de navbar consistente em todas as páginas (override) */
+nav#navbar, .navbar {
+    padding: 0.5rem 1rem !important;
+    min-height: 64px !important;
+    background-color: #fff !important;
+}
+.navbar .nav-link {
+    font-size: 1rem !important;
+    padding: 0.5rem 0.8rem !important;
+    color: #111 !important;
+    font-weight: 500 !important;
+}
+.navbar-brand img, .navbar-brand .brand-logo {
+    height: 52px !important;
+    max-height: 64px !important;
+}
+
+.destaques-text {
+    font-size: 0.95em;
+}
+
+.footer-social {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.social-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links-centered {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.page-header-h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.page-header-p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.contact-info-card-custom {
+    max-width: 320px;
+    width: 100%;
+}
+
+.info-item-icon {
+    font-size: 2rem;
+}
+
+.dev-card-h4 {
+    animation-delay: 0.1s;
+}
+
+.dev-card-p {
+    animation-delay: 0.15s;
+}
+
+.dev-card-a {
+    animation-delay: 0.2s;
+}
+
+.dev-card-h4-alt {
+    animation-delay: 0.12s;
+}
+
+.dev-card-p-alt {
+    animation-delay: 0.18s;
+}
+
+.dev-card-a-alt {
+    animation-delay: 0.22s;
+}
+
+.page-header-custom {
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #0b193e 0%, #427aa1 100%);
+}
+
+.page-header-container-custom {
+    text-align: center;
+}
+
+.footer-h5-custom {
+    text-align: center;
+}

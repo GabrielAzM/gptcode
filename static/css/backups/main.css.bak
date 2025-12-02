@@ -585,11 +585,6 @@ body {
 
 /* Partners */
 .partner-logo { filter: none !important; opacity: 1 !important; }
-
-.partner-logo:hover {
-  filter: none !important;
-  opacity: 1;
-}
 @media (max-width: 768px) {
   /* Estilos para telas menores que 768px (celulares, por exemplo) */
   .partner-logo { filter: none !important; opacity: 1 !important; }
@@ -1170,4 +1165,47 @@ body { padding-top: 70px !important; }
   padding-right: 15px !important;
 }
 
-/* END FINAL ENFORCEMENTS */
+/* Faixa azul padronizada: título centralizado, texto branco */
+.blue-banner,
+.page-header {
+  background: linear-gradient(135deg, #0b193e 0%, #427aa1 100%);
+  color: #fff;
+  text-align: center;
+  padding: 90px 20px;
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  margin: 0;
+  box-shadow: none;
+}
+
+.blue-banner .container,
+.page-header .container {
+  max-width: 100%;
+  width: 100vw;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.blue-banner h1,
+.page-header h1,
+.blue-banner .display-4,
+.page-header .display-4 {
+  color: #ffffff;
+  font-size: 2.4rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.blue-banner p.lead,
+.page-header p.lead {
+  color: rgba(255,255,255,0.85);
+  margin-top: 8px;
+  font-size: 1.05rem;
+}
+
+/* ajuste responsivo */
+@media (min-width: 992px) {
+  .blue-banner h1, .page-header h1 { font-size: 3.2rem; }
+  .blue-banner p.lead, .page-header p.lead { font-size: 1.125rem; }
+}

@@ -1,9 +1,8 @@
- 
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
 
-<link rel=\"icon\" type=\"image/png\" href=\"static/imagens/logos/gptcode-icon.png\" sizes=\"32x32\">
+  <link rel="icon" type="image/png" href="static/imagens/logos/favicon-gptcode.png" sizes="32x32">
     <meta charset="UTF-8" />
     <title>Desenvolvedores do Site | GPTCode</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,101 +14,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="static/css/main.css"
-    />
-    <link
-      rel="stylesheet"
-      href="static/css/equipe.css"
-    />
-    <style>
-      .developer-card {
-        background: var(--medium-blue);
-        color: white;
-      }
-    </style>
-  
-<!-- FORCED OVERRIDES: navbar/footer/header (inserted by script) -->
-<style>
-/* Force navbar + links */
-nav#navbar, .navbar, .navbar.fixed-top, .navbar.navbar-expand-lg {
-  background-color: #ffffff !important;
-  color: #111 !important;
-  box-shadow: none !important;
-  border-bottom: 1px solid rgba(0,0,0,0.06) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-}
-.navbar .nav-link { color: #111 !important; }
-.navbar .nav-link:hover, .navbar .nav-link:focus { color: #0b193e !important; background: transparent !important; }
-
-/* Force header appearance */
-.page-header { width:100% !important; padding:100px 0 !important; text-align:center !important; background: linear-gradient(135deg, #0b193e 0%, #427aa1 100%) !important; color: #fff !important; }
-.page-header h1, .page-header .display-4 { color: #fff !important; }
-
-/* PAGE HEADER - Full width without container constraints */
-.page-header {
-  background: linear-gradient(135deg, #0b193e 0%, #427aa1 100%) !important;
-  color: white !important;
-  padding: 100px 0 !important;
-  text-align: center !important;
-  width: 100vw !important;
-  position: relative !important;
-  left: calc(-50vw + 50%) !important;
-  margin: 0 !important;
-}
-
-.page-header .container {
-  max-width: 100% !important;
-  width: 100vw !important;
-  padding: 0 20px !important;
-  margin: 0 auto !important;
-}
-
-.page-header h1, .page-header .display-4 {
-  color: #ffffff !important;
-  font-size: 2.2rem !important;
-  margin: 0 !important;
-}
-
-.page-header p {
-  color: rgba(255, 255, 255, 0.8) !important;
-  margin: 0.5rem 0 !important;
-}
-
-/* FOOTER - Full width background with centered content */
-footer, footer#contato, .site-footer { 
-  background: linear-gradient(135deg, #0b193e 0%, #274a66 100%) !important; 
-  color: #fff !important; 
-  width: 100vw !important;
-  position: relative !important;
-  left: calc(-50vw + 50%) !important;
-  margin: 0 !important;
-  padding: 48px 0 28px !important;
-  box-shadow: none !important;
-}
-footer .container, footer#contato .container { 
-  max-width: 1200px !important; 
-  margin: 0 auto !important; 
-  padding: 0 15px !important;
-  width: 100% !important;
-}
-footer h3, footer h5, footer .footer-brand { 
-  color: #ffffff !important; 
-}
-footer a, footer p { 
-  color: rgba(255,255,255,0.95) !important; 
-}
-footer i { 
-  color: rgba(255,255,255,0.95) !important; 
-}
-
-/* Partner logos */
-.section-padding img, .partners-section img, .partner-logo { filter: none !important; -webkit-filter: none !important; opacity:1 !important; }
-</style>
-
-    <link rel="icon" type="image/png" href="static/imagens/logos/gptcode-icon.png" sizes="32x32">
+    <link rel="stylesheet" href="static/css/equipe.css" />
+    <link href="static/css/devs.css" rel="stylesheet">
     </head>
   <body>
 <nav
@@ -121,7 +27,6 @@ footer i {
           <img
             src="static/imagens/logos/logo-removebg-preview (1).png"
             alt="GPTCode Icon"
-            style="height: 60px; transition: transform 0.4s ease"
           />
         </a>
         <button
@@ -183,7 +88,12 @@ footer i {
         </div>
       </div>
     </nav>
-    <header class="page-header"><h1 style="font-size: 2.2rem; color: white; margin: 0">Desenvolvedores do Site</h1></header>
+    <header class="page-header blue-banner">
+      <div class="container text-center">
+        <h1 class="display-4">Desenvolvedores do Site</h1>
+        <p class="lead text-white-50">Equipe de desenvolvimento do site GPTCode</p>
+      </div>
+    </header>
     <div class="container"><main class="container py-5">
       <div class="row justify-content-center g-4">
         <!--Gabriel-->
@@ -195,17 +105,16 @@ footer i {
               width="150"
               alt="Gabriel Azevedo Marques"
             />
-            <h4 class="fade-in-up" style="animation-delay: 0.1s">
+            <h4 class="fade-in-up">
               Gabriel Azevedo Marques
             </h4>
-            <p class="fade-in-up" style="animation-delay: 0.15s">
+            <p class="fade-in-up">
               Desenvolvedor Front-end e Backend
             </p>
             <a
               href="https://github.com/GabrielAzM"
               target="_blank"
               class="btn btn-dark fade-in-up"
-              style="animation-delay: 0.2s"
               ><i class="bi bi-github"></i> GitHub</a
             >
           </div>
@@ -219,17 +128,16 @@ footer i {
               width="150"
               alt="Davi Rocha Fortes Bezerra"
             />
-            <h4 class="fade-in-up" style="animation-delay: 0.12s">
+            <h4 class="fade-in-up">
               Davi Rocha Fortes Bezerra
             </h4>
-            <p class="fade-in-up" style="animation-delay: 0.18s">
+            <p class="fade-in-up">
               Desenvolvedor Front-end
             </p>
             <a
               href="https://github.com/davirfb"
               target="_blank"
               class="btn btn-dark fade-in-up"
-              style="animation-delay: 0.22s"
               ><i class="bi bi-github"></i> GitHub</a
             >
           </div>
@@ -244,17 +152,16 @@ footer i {
               width="150"
               alt="Lucas Henrique Ferreira Alves"
             />
-            <h4 class="fade-in-up" style="animation-delay: 0.12s">
+            <h4 class="fade-in-up">
               Lucas Henrique Ferreira Alves
             </h4>
-            <p class="fade-in-up" style="animation-delay: 0.18s">
+            <p class="fade-in-up">
               Desenvolvedor Front-end
             </p>
             <a
               href="https://github.com/lucashf04"
               target="_blank"
               class="btn btn-dark fade-in-up"
-              style="animation-delay: 0.22s"
               ><i class="bi bi-github"></i> GitHub</a
             >
           </div>
@@ -269,17 +176,16 @@ footer i {
               width="150"
               alt="Luiz Gustavo de Sousa Batista"
             />
-            <h4 class="fade-in-up" style="animation-delay: 0.12s">
+            <h4 class="fade-in-up">
               Luiz Gustavo de Sousa Batista
             </h4>
-            <p class="fade-in-up" style="animation-delay: 0.18s">
+            <p class="fade-in-up">
               Desenvolvedor Backend
             </p>
             <a
               href="https://github.com/luizgsdb"
               target="_blank"
               class="btn btn-dark fade-in-up"
-              style="animation-delay: 0.22s"
               ><i class="bi bi-github"></i> GitHub</a
             >
           </div>
@@ -290,62 +196,44 @@ footer i {
       </div>
     </main>
     </main>
-    <script src=""></script>
-    <script src=""></script>
-  
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="static/js/main.js"></script>
+    
 <footer id="contato" class="py-5 bg-dark-blue text-white">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-4">
-            <h3 class="footer-brand">GPTCode</h3>
-            <p>Grupo de Pesquisa em Tecnologias Computacionais</p>
-            <p>Instituto Federal de Brasília</p>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <h5>Contato</h5>
-            <p>
-              <i class="bi bi-geo-alt-fill me-2"></i> SGAN Quadra 610 Módulos D,
-              E, F, G - Asa Norte, Brasília - DF, 70830-450
-            </p>
-            <p>
-              <i class="bi bi-envelope-fill me-2"></i>
-              <a href="mailto:gptcode@gptcode.com.br">gptcode@gptcode.com.br</a>
-            </p>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <h5>Conecte-se</h5><div style="text-align: center; margin-top: 15px"><div class="social-links" style="display: flex; justify-content: center; gap: 15px"><div class="social-links" style="display: flex; justify-content: center; gap: 15px; align-items: center">
-              <a
-                href="https://github.com/GPTCodeIFB"
-                class="social-link"
-                target="_blank"
-                ><i class="bi bi-github"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/gptcodeifb/"
-                class="social-link"
-                target="_blank"
-                ><i class="bi bi-instagram"></i
-              ></a>
-            </div></div>
-            <div class="mt-3">
-              <a href="#" class="btn btn-sm btn-outline-light back-to-top"
-                >Voltar ao topo <i class="bi bi-arrow-up"></i
-              ></a>
-            </div>
-          </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <h3 class="footer-brand">GPTCode</h3>
+        <p>Grupo de Pesquisa em Tecnologias Computacionais</p>
+        <p>Instituto Federal de Bras�lia</p>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <h5>Contato</h5>
+        <p>
+          <i class="bi bi-geo-alt-fill me-2"></i> SGAN Quadra 610 M�dulos D,
+          E, F, G - Asa Norte, Bras�lia - DF, 70830-450
+        </p>
+        <p>
+          <i class="bi bi-envelope-fill me-2"></i>
+          <a href="mailto:gptcode@gptcode.com.br">gptcode@gptcode.com.br</a>
+        </p>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <h5>Conecte-se</h5>
+        <div class="footer-social">
+          <a href="https://github.com/GPTCodeIFB" class="social-link" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://www.instagram.com/gptcodeifb/" class="social-link" target="_blank"><i class="bi bi-instagram"></i></a>
         </div>
-        <hr class="my-4" />
-        <div class="text-center">
-          <p class="small mb-0">
-            &copy; 2025 GPTCode. Todos os direitos reservados.
-          </p>
+        <div class="mt-3">
+          <a href="#" class="btn btn-sm btn-outline-light back-to-top">Voltar ao topo <i class="bi bi-arrow-up"></i></a>
         </div>
       </div>
-    </footer>
+    </div>
+    <hr class="my-4" />
+    <div class="text-center">
+      <p class="small mb-0">&copy; 2025 GPTCode. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
+
 

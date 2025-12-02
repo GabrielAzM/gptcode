@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "patch-headers-footers",
+			"type": "shell",
+			"command": "powershell -NoProfile -Command \"(Get-Content publicacoes.html) -replace '<header class=\"page-header\">','<header class=\"page-header blue-banner\">' | Set-Content publicacoes.html; (Get-Content equipe.html) -replace '<header class=\"page-header\">','<header class=\"page-header blue-banner\">' | Set-Content equipe.html; (Get-Content contato.html) -replace '<header class=\"page-header\">','<header class=\"page-header blue-banner\">' | Set-Content contato.html; (Get-Content devs.html) -replace '<header class=\"page-header\"><h1>Desenvolvedores do Site</h1></header>','<header class=\"page-header blue-banner\">`n  <div class=\"container text-center\">`n    <h1 class=\"display-4\">Desenvolvedores do Site</h1>`n    <p class=\"lead\">Equipe de desenvolvimento do site GPTCode</p>`n  </div>`n</header>' | Set-Content devs.html\"",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

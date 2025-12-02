@@ -1,0 +1,248 @@
+/* Overrides e estilos extra extraídos de index.html */
+
+/* Force navbar + links */
+nav#navbar, .navbar, .navbar.fixed-top, .navbar.navbar-expand-lg {
+  background-color: #ffffff !important;
+  color: #111 !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid rgba(0,0,0,0.06) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+.navbar .nav-link { color: #111 !important; }
+.navbar .nav-link:hover, .navbar .nav-link:focus { color: #0b193e !important; background: transparent !important; }
+
+/* Brand logo */
+.navbar-brand img.brand-logo {
+  height: 60px;
+  transition: transform 0.4s ease;
+}
+
+/* Force header appearance */
+.page-header { 
+  width:100% !important;
+  padding:30px 0 !important;
+  text-align:center !important;
+  background: linear-gradient(135deg, #0b193e 0%, #427aa1 100%) !important;
+  color: #fff !important;
+}
+.page-header h1, .page-header .display-4 { color: #fff !important; }
+
+/* PAGE HEADER - Full width without container constraints */
+.page-header {
+  background: linear-gradient(135deg, #0b193e 0%, #427aa1 100%) !important;
+  color: white !important;
+  padding: 100px 0 !important;
+  text-align: center !important;
+  width: 100vw !important;
+  position: relative !important;
+  left: calc(-50vw + 50%) !important;
+  margin: 0 !important;
+}
+
+.page-header .container {
+  max-width: 100% !important;
+  width: 100vw !important;
+  padding: 0 20px !important;
+  margin: 0 auto !important;
+}
+
+.page-header h1, .page-header .display-4 {
+  color: #ffffff !important;
+  font-size: 2.2rem !important;
+  margin: 0 !important;
+}
+
+.page-header p {
+  color: rgba(255, 255, 255, 0.8) !important;
+  margin: 0.5rem 0 !important;
+}
+
+/* Footer - Full width background with centered content */
+footer, footer#contato, .site-footer { 
+  background: linear-gradient(135deg, #0b193e 0%, #274a66 100%) !important; 
+  color: #fff !important; 
+  width: 100vw !important;
+  position: relative !important;
+  left: calc(-50vw + 50%) !important;
+  margin: 0 !important;
+  padding: 48px 0 28px !important;
+  box-shadow: none !important;
+}
+footer .container, footer#contato .container { 
+  max-width: 1200px !important; 
+  margin: 0 auto !important; 
+  padding: 0 15px !important;
+  width: 100% !important;
+}
+footer h3, footer h5, footer .footer-brand { 
+  color: #ffffff !important; 
+}
+footer a, footer p { 
+  color: rgba(255,255,255,0.95) !important; 
+}
+footer i { 
+  color: rgba(255,255,255,0.95) !important; 
+}
+
+/* Footer social wrapper */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Partner logos */
+.section-padding img, .partners-section img, .partner-logo { filter: none !important; -webkit-filter: none !important; opacity:1 !important; }
+
+/* Quem somos image */
+.quem-somos-img {
+  max-width: 280px;
+  width: 100%;
+}
+
+/* Destaque image */
+.destaque-img {
+  max-width: 90%;
+  max-height: 350px;
+  object-fit: contain;
+}
+
+/* small utility to keep footer buttons & small elements */
+.btn-sm { font-size: 0.85rem; }
+
+/* --- CUSTOM OVERRIDES ADDED: 2025-12-02 09:29:57Z --- */
+
+/* === Correções de layout globais / overrides === */
+
+/* Navbar: diminuir altura, alinhar logo e links */
+nav#navbar, .navbar {
+  padding: 0.35rem 1rem !important;
+  min-height: 56px !important;
+}
+.navbar-brand img, .navbar-brand .brand-logo {
+  height: 48px !important;
+  max-height: 56px !important;
+  width: auto !important;
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform .3s ease;
+}
+.navbar .navbar-nav { align-items: center; }
+.navbar .nav-link {
+  padding: 0.4rem 0.65rem !important;
+  font-size: 0.95rem !important;
+  color: #111 !important;
+}
+
+/* Toggler: ensure icon visible on white background */
+.navbar-toggler {
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+.navbar-toggler-icon {
+  background-image: none !important;
+  display: inline-block;
+  width: 22px;
+  height: 16px;
+  position: relative;
+}
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon span {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #111;
+  border-radius: 2px;
+}
+.navbar-toggler-icon::before { top: 0; }
+.navbar-toggler-icon span { top: 7px; }
+.navbar-toggler-icon::after { bottom: 0; }
+
+/* Page header / blue banner standardization (titles centered, white) */
+.page-header, .blue-banner {
+  background: linear-gradient(135deg, #0b193e 0%, #427aa1 100%) !important;
+  color: #fff !important;
+  text-align: center !important;
+  padding: 80px 20px !important;
+  width: 100vw !important;
+  position: relative !important;
+  left: calc(-50vw + 50%) !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+.page-header .container, .blue-banner .container {
+  max-width: 100% !important;
+  width: 100vw !important;
+  padding: 0 20px !important;
+  margin: 0 auto !important;
+}
+.page-header h1, .page-header .display-4,
+.blue-banner h1, .blue-banner .display-4 {
+  color: #fff !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+  font-size: 2.4rem !important;
+}
+.page-header p.lead, .blue-banner p.lead {
+  color: rgba(255,255,255,0.88) !important;
+  margin-top: 8px !important;
+  font-size: 1.05rem !important;
+}
+
+/* Projetos: títulos e blocos coerentes com outras páginas */
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #0b193e;
+}
+.project-category {
+  margin-bottom: 1.25rem;
+}
+.project-category h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0b3a65;
+  margin-bottom: .5rem;
+}
+.project-category ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.project-category li {
+  margin-bottom: .9rem;
+  color: #333;
+  line-height: 1.45;
+}
+
+/* Destaques: imagens responsivas e alinhadas */
+.destaque-img, .partners-section img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Footer small tweaks to ensure uniform spacing */
+footer.py-5 {
+  padding-top: 40px !important;
+  padding-bottom: 28px !important;
+}
+
+/* Responsividade: reduzir header padding em telas menores */
+@media (max-width: 768px) {
+  .page-header, .blue-banner { padding: 60px 16px !important; }
+  .page-header h1, .blue-banner h1 { font-size: 1.6rem !important; }
+  .navbar-brand img { height: 44px !important; }
+  .navbar .nav-link { font-size: 0.9rem !important; padding: 0.3rem 0.5rem !important; }
+}
+
+/* Small utility to keep footer buttons & small elements */
+.btn-sm { font-size: 0.85rem; }
