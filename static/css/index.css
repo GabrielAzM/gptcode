@@ -1,4 +1,3 @@
-/* === PAGE-SPECIFIC BUNDLE (copied from base.css) === */
 :root {
     --dark-blue: #0b193e;
     --medium-blue: #427aa1;
@@ -168,4 +167,41 @@ nav#navbar, .navbar {
 
 .footer-h5-custom {
     text-align: center;
+}
+
+/* Ajuste para o botão hambúrguer */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%2817, 17, 17, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Garantir que o menu colapsado seja exibido corretamente */
+.navbar-collapse {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .navbar-brand img {
+    height: 48px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
 }
